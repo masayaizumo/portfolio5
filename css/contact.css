@@ -113,26 +113,7 @@ h1:hover,a:hover{
 }
 
 
-/*---------------------------------*/
-/*固定ヘッダー                         */
-/*---------------------------------*/
-.header-container.fixed{
-  position: fixed;
-  width: 100%;
-  height: 96px;
-  background-color:#282F35 ;
-  top:0;
-  left: 0;
- padding: 0px 120px;
- margin: 0 auto;
-}
-.header-container.fixed .header-wrapper{
-  position: fixed;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%,-5%);
 
-}
 
 /*---------------------------------*/
 /*ハンバーガーメニュー             */

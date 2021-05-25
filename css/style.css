@@ -1,0 +1,573 @@
+/*---------------------------------*/
+/*Base                                    */
+/*---------------------------------*/
+
+body{
+  box-sizing: border-box;
+  font-family: 'Noto Serif', 'Noto Serif JP',serif;
+}
+
+.section-title{
+  font-size: 3.75rem;
+  font-style: italic;
+  margin-bottom: 80px;
+}
+h2::after{
+  content: '';
+  width:200px;
+  height: 5px;
+  display: inline-block;
+  background-color: #000000;
+  vertical-align: middle;
+  margin-left: 30px;
+}
+.works-title,.contact-title{
+  color: #FFFFFF;
+  text-align: right;
+}
+.works-title::after,.contact-title::after{
+  background-color: #FFFFFF;
+}
+.bottom-text{
+  font-size: 5.625rem;
+  font-weight: bold;
+}
+.right{
+  text-align: right;
+}
+.submit{
+  width:235px;
+  margin:0 auto 70px; 
+  background-color: #F7D43F;
+  border-radius: 30px;
+  box-shadow: #000000 1px 1px 1px 1px ;
+  border: none;
+  padding: 20px 70px;
+  display: block;
+}
+.submit:hover{
+  cursor: pointer;
+  opacity: .7;
+}
+.submit p{
+  font-size: 1rem;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+h1:hover,a:hover{
+  opacity: .7;
+  cursor: pointer;
+  transition: .3s;
+}
+
+/*---------------------------------*/
+/*header                                 */
+/*---------------------------------*/
+.header{
+  background-image: url(../img/fv-bgi_01@2x.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 752px;
+  padding-top: 20px;
+  position: relative;
+}
+.header-wrapper{
+  width:83%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title a{
+  font-size: 1.625rem;
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: bold;
+}
+.nav-wrapper{
+  display: flex;
+  align-items: center;
+}
+.nav-wrapper li{
+  list-style: none;
+  margin-right: 30px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.nav-wrapper li:last-of-type{
+  
+  margin-right: 0px;
+}
+.nav-wrapper li a{
+  color: #FFFFFF;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  
+}
+
+
+
+/*---------------------------------*/
+/*fv                                        */
+/*---------------------------------*/
+.fv-wrapper{
+  position: absolute;
+  top:65% ;
+  left: 10%;
+  transform: translate(-10%,-65%);
+  color: #FFFFFF;
+  text-align: center;
+}
+.fv-main{
+  font-size: 4.375rem;
+  font-weight: bold;
+line-height: 5rem;
+}
+.fv-sub{
+  font-size: 2rem;
+  line-height: 5rem;
+}
+.fv-sub br{
+  display: none;
+}
+
+/*---------------------------------*/
+/*固定ヘッダー                         */
+/*---------------------------------*/
+.header-container.fixed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:#282F35 ;
+  width: 100%;
+  height: 66px;
+  padding: 30px 0;
+}
+
+
+/*---------------------------------*/
+/*ハンバーガーメニュー             */
+/*---------------------------------*/
+.hum-btn{
+  display: none;
+  position: relative;
+}
+.bar{
+  width: 30px;
+  height: 2px;
+  background-color:#ffffff ;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.bar-top{
+  top: 25%;
+}
+.bar-mid{
+
+}
+.bar-bottom{
+ top: 75%;
+}
+
+.hum-btn.close .bar-top{
+transition: .3s;
+transform: translate(-50%, 7px) rotate(45deg) ;
+}
+.hum-btn.close .bar-mid{
+transition: .3s;
+opacity: 0;
+}
+.hum-btn.close .bar-bottom{
+transition: .3s;
+transform: translate(-50%, -8px) rotate(-45deg) ;
+}
+
+
+
+/*---------------------------------*/
+/*concept                                */
+/*---------------------------------*/
+.concept-wrapper{
+  padding: 100px 120px 0 220px;
+}
+.concept-container{
+  padding-top: 100px;
+  
+}
+.concept-text{
+  text-align: center;
+  font-size: 1.875rem;
+  line-height: 2.5rem;
+  margin-bottom: 60px;
+}
+.concept-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 70px;
+  padding-right: 100px;
+}
+.concept-item{
+  width: 44%;
+}
+.concept-item img{
+  width: 100%;
+  vertical-align: bottom;
+}
+.concept-item p{
+  font-size: 1rem;
+  line-height: 2.5rem;
+}
+.concept-bottom{
+  color:rgb(23, 23, 23, 0.05);
+  
+}
+
+
+/*---------------------------------*/
+/*works                                  */
+/*---------------------------------*/
+.works-wrapper{
+  background-image: url(../img/works-bgi@2x.jpg);
+  padding:100px 0 70px;
+  margin-top:70px ;
+}
+.works-container{
+  padding: 0 120px;
+}
+.works-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto 80px;
+
+}
+.works-item{
+  width: 30%;
+  background-color: #ffffff;
+}
+.works-item img{
+  width: 100%;
+}
+.works-text{
+  font-size: 1rem;
+  padding: 25px 20px;
+  line-height: 1.5rem;
+  width: 100%;
+}
+.works-bottom{
+  color: rgba(255, 255, 255, 0.1);
+}
+
+
+/*---------------------------------*/
+/*service                                 */
+/*---------------------------------*/
+.service-wrapper{
+  padding: 100px 0 70px;
+}
+.service-title{
+  margin-left: 220px;
+}
+.service-flex{
+  display: flex;
+margin-bottom: 70px;
+}
+.service-item{
+  width: 33.3%;
+  
+}
+.service-item a{
+  color: #FFFFFF;
+ display: block;
+  font-style: italic;
+  font-weight: bold;
+  font-size:2.5rem ;
+  text-align: center;
+  line-height: 320px;
+  width: 100%;
+}
+.service-item a:hover{
+  
+  transition: .3s;
+ background-color: rgba(40, 47, 53, 0.7);
+}
+.service-item1{
+  background-image: url(../img/service-img01@2x.jpg);
+  
+}
+.service-item2{
+  background-image: url(../img/service-img02@2x.jpg);
+}
+.service-item3{
+  background-image: url(../img/sevice-img03@2x.jpg);
+}
+.service-text{
+  color: #FFFFFF;
+  
+}
+
+.service-bottom{
+  color: rgb(23, 23, 23, 0.05);
+  margin-right: 120px;
+}
+
+
+/*---------------------------------*/
+/*contact                                */
+/*---------------------------------*/
+.contact-wrapper{
+  background-image: url(../img/contact-bgi@2x.jpg);
+  background-size: cover;
+  background-position:center;
+  padding: 110px 0 70px;
+}
+.contact-title{
+  margin-right: 120px;
+}
+.contact-text{
+  text-align: center;
+ color: #FFFFFF;
+ margin-bottom: 40px;
+ font-size: 1.25rem;
+ font-weight: bold;
+}
+.contact-bottom{
+  color: rgba(255, 255, 255, 0.1);
+  margin-left: 120px;
+}
+
+/*---------------------------------*/
+/*footer                                  */
+/*---------------------------------*/
+.footer{
+  padding:30px 0;
+}
+small{
+  font-size: 0.875rem;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+
+
+
+
+/*---------------------------------*/
+/*sp                                        */
+/*---------------------------------*/
+
+
+@media(max-width:768px){
+
+/*---------------------------------*/
+/*sp-Base                               */
+/*---------------------------------*/
+
+
+.section-title{
+  width: 100%;
+  font-size: 1.875rem;
+  margin-right: 30px;
+}
+h2::after{
+  width: 30%;
+}
+.bottom-text{
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+
+/*---------------------------------*/
+/*sp-header                             */
+/*---------------------------------*/
+.header{
+  width: 100%;
+}
+.header-container{
+  padding:0 15px;
+}
+.header-wrapper{
+  width: 100%;
+}
+.header-menu{
+
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: -150%;
+  background-color:#282F35 ;
+  z-index: 3;
+}
+
+.nav-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  flex-direction: column;
+}
+.nav-wrapper li{
+  width: 100%;
+  margin-right: 0;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.nav-wrapper li:last-of-type{
+  margin-bottom: 0;
+}
+
+/*---------------------------------*/
+/* sp-fv                                  */
+/*---------------------------------*/
+.fv-wrapper{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.fv-main{
+  font-size:2.3rem;
+} 
+.fv-sub{
+  font-size: 1.875rem;
+  line-height: 3rem;
+}
+.fv-sub br{
+  display: block;
+}
+
+/*---------------------------------*/
+/*sp-ハンバーガーメニュー         */
+/*---------------------------------*/
+body.noscroll{
+  overflow: hidden;
+}
+.hum-btn{
+  display: block;
+  width: 30px;
+  height: 30px;
+  z-index: 4;
+}
+.hum-btn:hover{
+  cursor: pointer;
+}
+.header-menu.slide-in{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0%;
+  background-color:#282F35 ;
+  z-index: 3;
+}
+
+/*---------------------------------*/
+/* sp-concept                          */
+/*---------------------------------*/
+.concept-wrapper{
+  padding: 0  15px 0;
+}
+.concept-text{
+  font-size: 1.25rem;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.concept-text br{
+  display: none;
+}
+.concept-flex{
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 0;
+}
+.concept-item{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.concept-item img{
+  margin-bottom: 10px;
+}
+
+
+
+
+/*---------------------------------*/
+/* sp-works                             */
+/*---------------------------------*/
+
+.works-wrapper{
+  padding: 40px 15px 40px;
+}
+.works-container{
+  padding: 0;
+}
+
+.works-flex{
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.works-item{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.works-item:last-of-type{
+  margin-bottom: 80px;
+}
+.works-text{
+  width: 88%;
+}
+
+
+/*---------------------------------*/
+/*  sp-service                          */
+/*---------------------------------*/
+
+.service-title{
+  width: 80%;
+  margin: 0px 15px 80px;
+}
+.service-flex{
+  flex-direction: column;
+  
+}
+.service-item{
+  width: 100%;
+  margin-bottom: 30px;
+}
+.service-bottom{
+  width: 90%;
+  margin:0 auto;
+}
+
+/*---------------------------------*/
+/*  sp-contact                         */
+/*---------------------------------*/
+.contact-wrapper{
+  padding: 100px 15px 40px;
+}
+
+
+.contact-bottom{
+  color: rgba(255, 255, 255, 0.1);
+  margin-left: 0px;
+}
+
+}

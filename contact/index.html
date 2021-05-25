@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact page</title>
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- header -->
+  <header class="header">
+    <div class="header-container">     
+     <div class="header-wrapper">
+        <div class="header-logo">
+          <h1 class="header-title"><a href="../index.html"> Cresta Design</a></h1>
+        </div>
+        <div class="header-menu">
+          <ul class="nav-wrapper">
+            <li><a href="#">Concept</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <!-- ハンバーガーメニュー -->
+        <div class="hum-btn">
+          <span class="bar bar-top"></span>
+          <span class="bar bar-mid"></span>
+          <span class="bar bar-bottom"></span>
+        </div>
+        <!--// ハンバーガーメニュー -->
+      </div>
+    </div>    
+    <!-- fv -->
+    <div class="fv-wrapper">
+      <p class="fv-main">Contact</p>
+    </div>  
+    <p class="bottom-text">
+      Contact us
+    </p>
+    <!--// fv --> 
+  </header>
+  <!--// header -->
+
+  <!-- contact-form -->
+  <section class="section-wrapper">
+    <form action="" method="POST">
+      <p class="contact">お問い合わせ内容</p>
+      <ul class="contact-list">
+        <li>
+          <input type="checkbox">
+          <label for="checkbox">資料請求</label>
+        </li>
+        <li>
+          <input type="checkbox">
+          <label for="checkbox">お電話でのご相談を希望</label>
+        </li>
+        <li>
+          <input type="checkbox">
+          <label for="checkbox">申し込み</label>
+        </li>
+      </ul>
+      
+      <dl>
+        <dt>担当者名  
+          <dd><input type="text"></dd>
+        </dt>
+        <dt>電話番号
+          <dd><input type="text"></dd>
+        </dt>
+        <dt>メールアドレス
+          <dd><input type="text"></dd>
+        </dt>
+        <dt>その他
+          <dd><textarea name="text" id="text" cols="30" rows="10"></textarea></dd>
+        </dt>
+      </dl>
+
+    </form>
+    <button class="submit">
+      <p><a href="#">Submit</a></p>
+    </button>
+  </section>
+  <!--// contact-form -->
+
+  <!-- footer -->
+  <footer class="footer">
+    <small>&copy; cresta.design all rights reserved</small>
+  </footer>
+  <!-- //footer -->
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+</html>
